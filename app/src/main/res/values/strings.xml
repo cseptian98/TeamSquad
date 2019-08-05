@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Submission</string>
+    <string name="player_name">Player Name</string>
+    <string name="position">Position</string>
+    <string name="main">Main Menu</string>
+    <string name="about">About</string>
+    <string name="nama">Chandra Septian</string>
+    <string name="email">cseptian48@gmail.com</string>
+    <string name="description">Description</string>
+    <string name="talks">Talks</string>
+    <string name="about_united">About United</string>
+    <string name="country">Country</string>
+    <string name="birth">Birth</string>
+</resources>

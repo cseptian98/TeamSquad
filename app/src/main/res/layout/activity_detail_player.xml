@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgPlayer"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+                tools:src="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="2dp"/>
+
+        <TextView
+                android:id="@+id/tvPlayerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/player_name"
+                android:layout_below="@id/imgPlayer"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+        />
+
+        <TextView
+                android:id="@+id/tvPositionPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/position"
+                android:layout_below="@id/tvPlayerName"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+        />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPositionPlayer"
+                android:orientation="vertical"
+        >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background"
+            >
+
+                <TextView
+                    android:id="@+id/tvSub1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_united"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="20dp"
+
+                />
+
+                <TextView
+                    android:id="@+id/tvAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/talks"
+                    android:layout_below="@+id/tvSub1"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginStart="30dp"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background"
+            >
+                <TextView
+                        android:id="@+id/tvCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/country"
+                        android:textAllCaps="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/white"
+                        android:layout_marginStart="20dp"
+                />
+                <TextView
+                        android:id="@+id/tvCountry2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Negara"
+                        android:layout_below="@id/tvCountry"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginStart="30dp"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                    android:layout_margin="8dp"
+            >
+                <TextView
+                        android:id="@+id/tvBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/birth"
+                        android:textAllCaps="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/white"
+                        android:layout_marginStart="20dp"
+                />
+                <TextView
+                        android:id="@+id/tvBirth2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Lahir"
+                        android:layout_below="@id/tvBirth"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginStart="30dp"
+                />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
